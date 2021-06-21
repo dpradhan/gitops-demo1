@@ -1,0 +1,4 @@
+creation_rules:
+  - path_regex: .*.yaml
+    encrypted_regex: ^(data|stringData)$
+    azure_keyvault: https://poc-cd-flux-kv.vault.azure.net/keys/sops-key/59602f7b3a8e47dea9c3fe9fe1410978
