@@ -8,6 +8,8 @@ spec:
   clientID: e559294d-b26e-4922-8f5f-14eb129286a1
   resourceID: /subscriptions/44e49970-899b-4abc-aaf8-322b3e531fbe/resourcegroups/poc-cd-flux/providers/Microsoft.ManagedIdentity/userAssignedIdentities/SopsDecryptorIdentity
   type: 0 # user-managed identity
+
+
 ---
 apiVersion: aadpodidentity.k8s.io/v1
 kind: AzureIdentityBinding
@@ -17,3 +19,5 @@ metadata:
 spec:
   azureIdentity: sops-akv-decryptor
   selector: sops-akv-decryptor  # kustomize-controller label will match this name
+
+
